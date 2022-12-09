@@ -80,6 +80,9 @@
  <p>Total: <?php echo mysqli_num_rows($query) ?></p>
 </BR>
  </div>
+ <script>
+	  window.print();
+</script>
  </body>
 
 </html>
