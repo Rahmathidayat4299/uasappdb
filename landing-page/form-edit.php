@@ -20,22 +20,37 @@ if( mysqli_num_rows($query) < 1 ){
 <html>
 <head>
  <title>Formulir Edit Siswa | SMK Coding</title>
+ <link rel="stylesheet" href="styleform.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
  <header>
  <h3>Formulir Edit Siswa</h3>
  </header>
+ <div class="container-logout">
  <form action="proses-edit.php" method="POST">
  <fieldset>
  <input type="hidden" name="id" value="<?php echo $siswa['id'] ?>" />
  <p>
- <label for="nama">Nama: </label>
- <input type="text" name="nama" placeholder="nama lengkap" value="<?php echo
-$siswa['nama'] ?>" />
+ <div class="form-group">
+<label for="id">nama</label>
+<input type="text" class="form-control" nama="nama" value="<?php echo
+$siswa['nama'] ?>" aria-describedby="emailHelp" name = "nama" placeholder="masukkan nama">
+</div>
  </p>
  <p>
- <label for="alamat">Alamat: </label>
- <textarea name="alamat"><?php echo $siswa['alamat'] ?></textarea>
+ <!-- <label for="alamat">Alamat: </label>
+ <textarea name="alamat"><?php echo $siswa['alamat'] ?></textarea> -->
+
+ <div class="form-group">
+<label for="id">alamat</label>
+<input type="text" class="form-control" alamat="alamat" value="<?php echo $siswa['alamat'] ?>" aria-describedby="emailHelp" name = "alamat" placeholder="masukkan alamat">
+        
+                    </div>
  </p>
  <p>
  <label for="jenis_kelamin">Jenis Kelamin: </label>
@@ -44,6 +59,8 @@ $siswa['nama'] ?>" />
 'laki-laki') ? "checked": "" ?>> Laki-laki</label>
  <label><input type="radio" name="jenis_kelamin" value="perempuan" <?php echo ($jk ==
 'perempuan') ? "checked": "" ?>> Perempuan</label>
+
+
  </p>
  <p>
  <label for="agama">Agama: </label>
@@ -66,5 +83,6 @@ $siswa['sekolah_asal'] ?>" />
  </p>
  </fieldset>
  </form>
+ </div>
  </body>
 </html>
