@@ -18,20 +18,26 @@
                 <h3>Siswa yang sudah mendaftar</h3>
             </header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="">Navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="berhasil_login.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="form-daftar.php">Pendaftaran</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="list_siswa.php">List Siswa</a>
+            <a class="nav-link" href="list_mahasiswa.php">List Mahasiswa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="form_daftar_dosen.php">form daftar Dosen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="list_dosen.php">List Dosen</a>
           </li>
         
         </ul>
@@ -42,6 +48,7 @@
                 <thead>
                     <tr>
                         <th scope="col">No</th>
+                        <th scope="col">Foto</th>
                         <th scope="col">Nama</th>
                         <th scope="col">Alamat</th>
                         <th scope="col">Jenis Kelamin</th>
@@ -58,6 +65,7 @@
     while($siswa = mysqli_fetch_array($query)){
     echo "<tr>";
     echo "<td scope = row>".$siswa['id']."</td>";
+    echo "<td scope = row><img src='images/".$siswa['foto']."' width='100' height='100'></td>";
     echo "<td scope = row>".$siswa['nama']."</td>";
     echo "<td scope = row >".$siswa['alamat']."</td>";
     echo "<td scope = row>".$siswa['jenis_kelamin']."</td>";
@@ -75,6 +83,7 @@
     <BR>
     <p>Total: <?php echo mysqli_num_rows($query) ?></p>
     <button onclick="window.print()">Print Laporan Siswa</button>
+    <button><a href="register.php">Logout</a></button>
     </BR>
     </div>
     </body>

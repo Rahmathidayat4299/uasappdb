@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Formulir Pendaftaran Siswa Baru | SMK Coding</title>
- <link rel="stylesheet" href="styleform.css">
+ <title>Formulir Pendaftaran Mahasiswa Baru | SMK Coding</title>
+ <link rel="stylesheet" href="styleform_pinjam.css">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -25,7 +25,7 @@
         <a class="nav-link" href="form-daftar.php">Pendaftaran</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="list_siswa.php">List Siswa</a>
+        <a class="nav-link" href="list_mahasiswa.php">List Siswa</a>
       </li>
     </ul>
   </div>
@@ -82,6 +82,14 @@
     </div>
  </p>
  <p>
+ </div>
+ <div class="form-group">
+ <tr>
+        <td>Foto</td>
+        <td>
+          <input type="file" name="foto">
+        </td>
+      </tr>
  </div>
  <input type="submit" value="Daftar" name="daftar" />
  </p>

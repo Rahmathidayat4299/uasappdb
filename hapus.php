@@ -9,7 +9,7 @@ if( isset($_GET['id']) ){
  $query = mysqli_query($conn, $sql);
  // apakah query hapus berhasil?
  if( $query ){
- header('Location: list_siswa.php');
+ header('Location: list_mahasiswa.php');
  } else {
  die("gagal menghapus...");
  }

@@ -27,7 +27,10 @@ if (!isset($_SESSION['username'])) {
             <a href="logout.php" class="btn">Logout</a>
             </div>
             <div class="input-group">
-            <a href="list_siswa.php" class="btn">list siswa</a>
+            <a href="list_mahasiswa.php" class="btn">list siswa</a>
+            </div>
+            <div class="input-group">
+            <a href="list_pinjaman.php" class="btn">list pinjaman</a>
             </div>
         </form>
     </div>

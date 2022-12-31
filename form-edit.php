@@ -3,7 +3,7 @@
 include("config.php");
 // kalau tidak ada id di query string
 if( !isset($_GET['id']) ){
- header('Location: list-siswa.php');
+ header('Location: list_mahasiswa.php');
 }
 //ambil id dari query string
 $id = $_GET['id'];
@@ -19,7 +19,7 @@ if( mysqli_num_rows($query) < 1 ){
 <!DOCTYPE html>
 <html>
 <head>
- <title>Formulir Edit Siswa | SMK Coding</title>
+ <title>Formulir Edit Mahasiswa | SMK Coding</title>
  <link rel="stylesheet" href="styleform.css">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
@@ -34,6 +34,7 @@ if( mysqli_num_rows($query) < 1 ){
  <div class="container-logout">
  <form action="proses-edit.php" method="POST">
  <fieldset>
+ 
  <input type="hidden" name="id" value="<?php echo $siswa['id'] ?>" />
  <p>
  <div class="form-group">
@@ -78,6 +79,14 @@ $siswa['nama'] ?>" aria-describedby="emailHelp" name = "nama" placeholder="masuk
  <input type="text" name="sekolah_asal" placeholder="nama sekolah" value="<?php echo
 $siswa['sekolah_asal'] ?>" />
  </p>
+ <div class="form-group">
+ <tr>
+        <td>Foto</td>
+        <td>
+          <input type="file" name="foto">
+        </td>
+      </tr>
+ </div>
  <p>
  <input type="submit" value="Simpan" name="simpan" />
  </p>
