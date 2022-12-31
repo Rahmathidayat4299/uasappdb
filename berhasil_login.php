@@ -30,7 +30,7 @@ if (!isset($_SESSION['username'])) {
             <a href="list_mahasiswa.php" class="btn">list siswa</a>
             </div>
             <div class="input-group">
-            <a href="list_pinjaman.php" class="btn">list pinjaman</a>
+            <a href="list_dosen.php" class="btn">list dosen</a>
             </div>
         </form>
     </div>
