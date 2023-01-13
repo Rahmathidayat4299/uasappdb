@@ -29,7 +29,7 @@ if( mysqli_num_rows($query) < 1 ){
 </head>
 <body>
  <header>
- <h3>Formulir Edit Siswa</h3>
+ <h3>Formulir Edit Dosen</h3>
  </header>
  <div class="container-logout">
  <form action="proses_edit_dosen.php" method="POST">

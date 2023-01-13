@@ -22,7 +22,7 @@
         <ul>
           <li><a class="nav-link" href="home.php"></a>Home</li>
           <li class="nav-item">
-            <a class="nav-link" href="form-daftar.php">Pendaftaran siswa</a>
+            <a class="nav-link" href="form-daftar.php">Pendaftaran Mahasiswa</a>
           </li>
           <li>
             <a class="nav-link" href="form_daftar_dosen.php">Pendaftaran dosen</a>
@@ -34,7 +34,7 @@
             <a href="list_dosen.php">List Dosen </a>
         </div>
         </div>
-          <li><a href="logout.php" class="btn"></a>Logout</li>
+          <li><a href="logout.php" class="btn">Logout</a></li>
         </ul>
       </div>
       <div class="header">

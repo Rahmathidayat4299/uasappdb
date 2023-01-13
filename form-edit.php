@@ -50,8 +50,7 @@ $siswa['nama'] ?>" aria-describedby="emailHelp" name = "nama" placeholder="masuk
  <div class="form-group">
 <label for="id">alamat</label>
 <input type="text" class="form-control" alamat="alamat" value="<?php echo $siswa['alamat'] ?>" aria-describedby="emailHelp" name = "alamat" placeholder="masukkan alamat">
-        
-                    </div>
+</div>
  </p>
  <p>
  <label for="jenis_kelamin">Jenis Kelamin: </label>

@@ -25,7 +25,7 @@
         <a class="nav-link" href="form-daftar.php">Pendaftaran</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="list_mahasiswa.php">List Siswa</a>
+        <a class="nav-link" href="list_mahasiswa.php">List Mahasiswa</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="list_mahasiswa.php">List Dosen</a>

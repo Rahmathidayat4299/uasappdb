@@ -9,13 +9,13 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="home.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-            <title>Pendaftaran Siswa Baru | SMK Coding</title>
+            <title>Pendaftaran Mahasiswa Baru</title>
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
         </head>
         <body>
             <header>
-                <h3>Siswa yang sudah mendaftar</h3>
+                <h3>Mahasiswa yang sudah mendaftar</h3>
             </header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="">Navbar</a>
@@ -25,7 +25,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link" href="berhasil_login.php">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="form-daftar.php">Pendaftaran</a>
@@ -33,18 +33,12 @@
           <li class="nav-item">
             <a class="nav-link" href="list_mahasiswa.php">List Mahasiswa</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="form_daftar_dosen.php">form daftar Dosen</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="list_dosen.php">List Dosen</a>
-          </li>
         
         </ul>
       </div>
     </nav>
             <div class="table-responsive-md">
-            <table class="table table-striped" style="width: 800px; border : solid red 1px;">
+            <table align = "center" class="table table-striped" style="width: 800px; border : solid red 1px;">
                 <thead>
                     <tr>
                         <th scope="col">No</th>
@@ -82,7 +76,7 @@
     </table>
     <BR>
     <p>Total: <?php echo mysqli_num_rows($query) ?></p>
-    <button onclick="window.print()">Print Laporan Siswa</button>
+    <button onclick="window.print()">Print Laporan data Mahasiswa</button>
     <button><a href="register.php">Logout</a></button>
     </BR>
     </div>

@@ -10,7 +10,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <body>
  <header>
- <h3>Formulir Pendaftaran Siswa Baru</h3>
+ <h3>Formulir Pendaftaran Mahasiswa Baru</h3>
  <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@
         <a class="nav-link" href="form-daftar.php">Pendaftaran</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="list_mahasiswa.php">List Siswa</a>
+        <a class="nav-link" href="list_mahasiswa.php">List Mahasiswa</a>
       </li>
     </ul>
   </div>
